@@ -9,3 +9,19 @@ for (let i = 1; i <= 100; i++) {
     else if (i % 5 === 0) console.log('Buzz');
 }
 
+
+// Option 2
+
+function fizzBuzz() {
+    let counter = 1;
+
+    while(counter <= 100) {
+        counter % 3 === 0 && counter % 5 === 0
+        ? console.log('FizzBuzz')
+        : counter % 3 === 0 && console.log('Fizz')
+        || counter % 5 === 0 && console.log('Buzz')
+        counter++;
+    }
+}
+
+fizzBuzz();
